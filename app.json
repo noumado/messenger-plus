@@ -1,0 +1,23 @@
+{
+  "name": "messenger-plus",
+  "description": "messenger plus will allow you to send and receive messages ",
+  "scripts": {
+    "postdeploy": "bin/setup",
+    "pr-predestroy": "bin/teardown"
+  },
+  "env": {
+    "messenger": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "http://github.com/heroku/heroku-messenger-plus"
+    }
+  ]
+}
